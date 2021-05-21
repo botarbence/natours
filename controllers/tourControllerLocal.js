@@ -5,7 +5,7 @@ const tours = JSON.parse(
 );
 
 exports.checkID = (req, res, next, val) => {
-  console.log(`Tour id is: ${val}`);
+  // console.log(`Tour id is: ${val}`);
 
   if (Number(val) > tours.length) {
     return res.status(404).json({
